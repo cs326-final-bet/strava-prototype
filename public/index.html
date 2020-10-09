@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bet</title>
+
+	   <script src="http://openlayers.org/api/OpenLayers.js"></script>
+
+	   <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+	   <div id="page-login" class="page-hidden">
+		  <a href="/api/v0/auth/strava/enter">
+			 Authenticate with Strava
+		  </a>
+	   </div>
+
+	   <div id="page-activities-list" class="page-hidden">
+		  <label for="activities-select">Select an activity</label>
+		  
+		  <select id="activities-select">
+		  </select>
+
+		  <button id="select-activity-button">
+			 View
+		  </button>
+	   </div>
+
+	   <div id="page-activity-view" class="page-hidden">
+		  <div id="mapbox">
+		  </div>
+	   </div>
+
+	   <script src="/main.js"></script>
+    </body>
+</html>
